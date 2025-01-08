@@ -54,6 +54,103 @@
       .cta-button:hover {
         background: #555;
       }
+
+      /* ----- New: Meet Our Team Section ----- */
+      .team-section {
+        max-width: 1200px;
+        width: 100%;
+        margin-top: 2rem;
+      }
+      .team-section h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      .team-section p {
+        text-align: center;
+        margin-bottom: 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .team-card {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 6px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .team-card h3 {
+        margin-bottom: 0.25rem;
+      }
+      .team-card .role {
+        color: #007bff;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+      .team-card .batch {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .social-icons a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      .social-icons a:hover {
+        color: #007bff;
+      }
+
+      /* ----- New: Powerful Features Section ----- */
+      .features-section {
+        max-width: 1200px;
+        width: 100%;
+        margin-top: 3rem;
+      }
+      .features-section h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      .features-section p {
+        text-align: center;
+        margin-bottom: 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+      }
+      .feature-card {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .feature-card h3 {
+        margin-bottom: 0.5rem;
+      }
+      .feature-card p {
+        line-height: 1.5;
+      }
+
+      /* ----- Existing Results Section & Footer ----- */
       .results-section {
         margin-top: 2rem;
         max-width: 600px;
@@ -88,6 +185,94 @@
       <p>Get a quick look at your post-performance metrics. Powered by DataStax Astra, Langflow, and GPT.</p>
       <button class="cta-button" id="ctaButton">Get Insights</button>
     </header>
+
+    <!-- Meet Our Team Section -->
+    <section class="team-section">
+      <h2>Meet Our Team</h2>
+      <p>The brilliant minds behind SocialAnalytics, bringing together expertise in development, data science, and design.</p>
+      <div class="team-container">
+        <!-- Team Card 1 -->
+        <div class="team-card">
+          <h3>Isha</h3>
+          <span class="role">Designer &amp; Developer</span>
+          <div class="batch">NIT Jalandhar (2027)</div>
+          <div class="social-icons">
+            <a href="#" title="LinkedIn">&#128279;</a>
+            <a href="#" title="GitHub">&#128187;</a>
+          </div>
+        </div>
+        <!-- Team Card 2 -->
+        <div class="team-card">
+          <h3>Mihir Verma</h3>
+          <span class="role">Fullstack Developer</span>
+          <div class="batch">NIT Jalandhar (2027)</div>
+          <div class="social-icons">
+            <a href="#" title="LinkedIn">&#128279;</a>
+            <a href="#" title="GitHub">&#128187;</a>
+          </div>
+        </div>
+        <!-- Team Card 3 -->
+        <div class="team-card">
+          <h3>Rishik Ashili</h3>
+          <span class="role">Langflow Developer</span>
+          <div class="batch">NIT Jalandhar (2028)</div>
+          <div class="social-icons">
+            <a href="#" title="LinkedIn">&#128279;</a>
+            <a href="#" title="GitHub">&#128187;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Powerful Features Section -->
+    <section class="features-section">
+      <h2>Powerful Features</h2>
+      <p>Everything you need to succeed on social media, powered by cutting-edge AI technology</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Real-time Analytics</h3>
+          <p>
+            Track your social media performance in real-time with comprehensive
+            analytics and insights. Make data-driven decisions instantly.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Global Reach Analysis</h3>
+          <p>
+            Understand your audience demographics and reach across different
+            regions and platforms.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Growth Tracking</h3>
+          <p>
+            Monitor your follower growth, engagement rates, and content
+            performance over time.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Audience Insights</h3>
+          <p>
+            Dive deeper into audience behavior and preferences to fine-tune
+            your posting strategy.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>GPT-powered Insights</h3>
+          <p>
+            Unlock advanced analysis and recommendations using GPT-based
+            technologies.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Smart Automation</h3>
+          <p>
+            Automate repetitive tasks, streamline content scheduling, and
+            free up time for creative planning.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Results Section (Initially empty) -->
     <div class="results-section" id="resultsSection">
